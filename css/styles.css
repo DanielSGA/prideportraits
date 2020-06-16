@@ -6,7 +6,7 @@
     border-radius: 50%;
 }
 
-img {
+.circleimg {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -26,7 +26,7 @@ img {
     margin-left: 5px;
 }
 
-.wrapper { 
+body { 
     height: 100%;
     width: 100%;
     left:0;
@@ -34,8 +34,10 @@ img {
     top: 0;
     bottom: 0;
     position: absolute;
-  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  background-size: 1800% 1800%;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   
   -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
@@ -62,7 +64,6 @@ img {
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
   }
-
 .header {
     text-align: center;
     /*padding-left: 100px;*/
@@ -70,8 +71,8 @@ img {
     margin: 0 auto;
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin-top: 90px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
     font-weight: 800;
 }
 
@@ -88,8 +89,8 @@ img {
     display: inline-block;
     line-height: 2.2em;
     padding: 0 0.62em;
-    border: 1px solid #666;
-    border-radius: 0.25em;
+    border: 0px solid white;
+    /*border-radius: 0.25em;
     /*background-image: linear-gradient( to bottom, #fff, #ccc );*/
     background-color: white;
     box-shadow: inset 0 0 0.1em #fff, 0.2em 0.2em 0.1 rgba( 0, 0, 0, 0.3 );
@@ -102,30 +103,35 @@ img {
 }
 
 .btnapply:hover {
-    border-color: #3c7fb1;
-    background-image: linear-gradient( to bottom, #fff, #a9dbf6 );
+    background-color: black;
+    color: white;
  }
 
 label{
     display: inline-block;
     line-height: 2.2em;
     padding: 0 0.62em;
-    border: 1px solid #666;
+    /*border: 1px solid #666;
     border-radius: 0.25em;
     /*background-image: linear-gradient( to bottom, #fff, #ccc );*/
     background-color: white;
     box-shadow: inset 0 0 0.1em #fff, 0.2em 0.2em 0.1 rgba( 0, 0, 0, 0.3 );
-    font-family: arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
     cursor: pointer;
     width: 100px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    color: black;
  }
 
 label:hover {
-    border-color: #3c7fb1;
-    background-image: linear-gradient( to bottom, #fff, #a9dbf6 );
+    /*border-color: #3c7fb1;*/
+    /*background-image: linear-gradient( to bottom, #fff, #a9dbf6 );*/
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: white;
  }
 
 .boldtxt {
@@ -135,12 +141,14 @@ label:hover {
     font-weight: 600;
     color: white;
     text-shadow: 1px 1px black;
+    font-size: 20px;
 }
 
 .rglrtext {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: white;
+    font-size: 18px;
     text-shadow: 1px 1px black;
 }
 
@@ -159,12 +167,11 @@ label:hover {
 }
 
 .xdfooter {
-    padding-top: 0px;
-    padding-left: 900px;
-    position: fixed;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .xdlogo {
-    height: 130px;
-    width: 130px;
+    height: 25px;
 }
