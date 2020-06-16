@@ -71,7 +71,7 @@ body {
     margin: 0 auto;
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin-top: 80px;
+    margin-top: 65px;
     margin-bottom: 50px;
     font-weight: 800;
 }
@@ -168,7 +168,7 @@ label:hover {
 
 .xdfooter {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
