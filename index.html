@@ -4,30 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesp.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <title>Generate your pride portrait</title>
+    <title>Gradient Tool</title>
 </head>
 
 <body>
     <div class="wrapper">
+        <div id="bodydiv" class="bodylgbt">
         <div class="row">
-            <div class="header">
-                    Show your Pride! 🏳️‍🌈
+            <div class="col">
+                <div class="header">
+                    Gradient Tool
+                </div>
             </div>
         </div>
         <div class="container">
         <div class="row">
-            <div class="col upload">
+            <div class="col-lg-6 col-sm-12 upload">
                 <div class="d-flex flex-column bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                        <p class="boldtxt">
+                            1.- Choose your gradient
+                            <img src="img/info.png" alt="" class="btninfo" data-toggle="tooltip" data-placement="top" title="Choose a square format picture ◻️">
+                        </p>
+                        <p class="rglrtext">
+                            Click on the gradient you want to apply
+                        </p>
+                        <button class="gr-btn btn-glow" id="lgbt" onclick="lgbt()">
+                        <button class="gr-btn" id="panaf" onclick="panafrican()"></button>
+                        <!--<input type="image" class="gr-btn" id="panaf" onclick="panafrican()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_the_UNIA.svg/1200px-Flag_of_the_UNIA.svg.png">-->
+
+                    </div>
                     <div class="p-2 bd-highlight">
                         <div>
                             <p class="boldtxt">
-                                1.- Strike a pose!
+                                2.- Load your picture
                                 <img src="img/info.png" alt="" class="btninfo" data-toggle="tooltip" data-placement="top" title="Choose a square format picture ◻️">
                             </p>
                             <p class="rglrtext">
@@ -40,34 +56,35 @@
                     <div class="p-2 bd-highlight step2">
                         <div>
                             <p class="boldtxt">
-                                2.- Apply the Ally border
+                                3.- Apply your gradient
                             </p>
                             <p class="rglrtext">
-                                Proud and ready 🙌🏻
+                                Lorem ipsum dolor sit
                             </p>
                             <button onclick="merge()" class="btnapply">Apply</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col upload">
+            <div class="col-lg-6 col-sm-12 upload">
                 <div class="d-flex flex-column bd-highlight mb-3">
                     <div class="p-2 bd-highlight">
                         <div>
                             <p class="boldtxt">
-                                3.- Your true colors are beautiful!
+                                3.- Lorem ipsum dolor sit amet
                                 <img src="img/info.png" alt="" class="btninfo" data-toggle="tooltip" data-placement="top" title="Logout and login Teams after you upload your Pride picture">
                             </p>
                             <p class="rglrtext">
-                                Right-click and save your portrait ✨
+                                Right-click and save your portrait
                             </p>
                         </div>
                         <div class="cnvs1">
                             <div id="divhidden">
-                                <img id="image1" src="img/template.png" class="hidden">
+                                <img id="image1" src="img/lgbt.png" class="hidden">
+                                <img id="image2" src="img/panafrica.png" class="hidden">
                             </div>
                             <div class="cnv">
-                                <img id="image2" src="#" class="hidden circleimg">
+                                <img id="image3" src="#" class="hidden circleimg">
                                 <canvas id="canvas" class="hidden" crossorigin></canvas>
                             </div>
                         </div>
@@ -77,6 +94,8 @@
         </div>
     </div>
     </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

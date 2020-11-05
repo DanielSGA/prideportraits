@@ -26,7 +26,26 @@
     margin-left: 5px;
 }
 
-body { 
+.bodylgbt { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+.bodypan { 
     height: 100%;
     width: 100%;
     left:0;
@@ -42,38 +61,42 @@ body {
   -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
   -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
+    animation: rainbow 18s ease infinite;
+}
   
-  @-webkit-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-moz-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-o-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @keyframes rainbow { 
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
 .header {
     text-align: center;
     /*padding-left: 100px;*/
-    font-size: 80px;
+    font-size: 72px;
     margin: 0 auto;
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin-top: 65px;
+    margin-top: 40px;
     margin-bottom: 50px;
     font-weight: 800;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .free {
@@ -159,7 +182,7 @@ label:hover {
 }
 
 .step2 {
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .cnvs1 {
@@ -174,4 +197,29 @@ label:hover {
 
 .xdlogo {
     height: 25px;
+}
+
+.gr-btn {
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    margin: 0 0 16px 0;
+    display: inline;
+    border: none;
+}
+
+.btn-glow {
+    box-shadow: 0 0 9px 6px #cbcbcb;
+}
+
+#lgbt {
+    margin: 0 16px 16px 0;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gay_Pride_Flag.svg/512px-Gay_Pride_Flag.svg.png");
+    background-size: cover;
+}
+
+#panaf {
+    margin: 0 0 16px 0;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_the_UNIA.svg/1200px-Flag_of_the_UNIA.svg.png");
+    background-size: cover;
 }
