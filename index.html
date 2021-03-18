@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title>Gradient Tool</title>
+    <title>Profile Picture Border Tool</title>
 </head>
 
 <body>
@@ -32,10 +32,11 @@
                             1.- Choose your gradient
                         </p>
                         <p class="rglrtext">
-                            Click on the gradient you want to apply 👆🏻
+                            Click on the gradient you want to apply 👇🏻
                         </p>
-                        <button class="gr-btn btn-glow" id="lgbt" onclick="lgbt()" data-toggle="tooltip" data-placement="bottom" title="LGBT Ally">
-                        <button class="gr-btn" id="panaf" onclick="panafrican()" data-toggle="tooltip" data-placement="bottom" title="Panafrican Rights"></button>
+                        <button class="lgbt gr-btn btn-glow" id="activebtn" onclick="lgbt()" data-toggle="tooltip" data-placement="bottom" title="LGBT Ally">
+                        <button class="panaf gr-btn" id="panaf" onclick="panafrican()" data-toggle="tooltip" data-placement="bottom" title="Panafrican Rights"></button>
+                        <button class="vet gr-btn" id="veterans" onclick="veterans()" data-toggle="tooltip" data-placement="bottom" title="USA Veterans"></button>
                         <!--<input type="image" class="gr-btn" id="panaf" onclick="panafrican()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_the_UNIA.svg/1200px-Flag_of_the_UNIA.svg.png">-->
 
                     </div>
@@ -79,11 +80,12 @@
                         </div>
                         <div class="cnvs1">
                             <div id="divhidden">
-                                <img id="image1" src="img/lgbt.png" class="hidden">
-                                <img id="image2" src="img/panafrica.png" class="hidden">
+                                <img id="active" src="img/lgbt.png" class="hidden lgbtgr">
+                                <img id="image2" src="img/panafrica.png" class="hidden pangr">
+                                <img id="image3" src="img/veterans.png" class="hidden vetgr">
                             </div>
                             <div class="cnv">
-                                <img id="image3" src="#" class="hidden circleimg">
+                                <img id="imageup" src="#" class="hidden circleimg">
                                 <canvas id="canvas" class="hidden" crossorigin></canvas>
                             </div>
                         </div>

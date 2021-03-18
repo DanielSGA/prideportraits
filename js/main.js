@@ -3,60 +3,142 @@ function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function(e) {
-            $('#image3').attr('src', e.target.result);
-            $('#image3').removeClass("hidden");
+            $('#imageup').attr('src', e.target.result);
+            $('#imageup').removeClass("hidden");
         };
         reader.readAsDataURL(input.files[0]);
     }
 }
 
 function lgbt() {
-    var lgbtimg = document.getElementById('image2');
-    var panimg = document.getElementById('image1');
+    var active = document.getElementById('active');
+    var lgbtimg = document.getElementById('image1');
     const bodydiv = document.getElementById('bodydiv');
+    var activebtn = document.getElementById('activebtn');
     var lgbtbtn = document.getElementById('lgbt');
-    var panbtn = document.getElementById('panaf');
 
-    if(lgbtimg.id == 'image2')
+    if(lgbtimg.id == 'image1')
     {
-        lgbtimg.id = 'image1';
-        panimg.id = 'image2';
-    
-        bodydiv.classList.add("bodylgbt");
-        bodydiv.classList.remove("bodypan");
+        if(active.classList.contains('pangr'))
+        {
+            active.id = 'image2';
+            lgbtimg.id = 'active';
 
-        lgbtbtn.classList.add("btn-glow");
-        panbtn.classList.remove("btn-glow");
+            bodydiv.classList.add("bodylgbt");
+            bodydiv.classList.remove("bodypan");
 
+            lgbtbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id ='panaf';
+            lgbtbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('vetgr'))
+        {
+            active.id = 'image3';
+            lgbtimg.id = 'active';
+        
+            bodydiv.classList.add("bodylgbt");
+            bodydiv.classList.remove("bodyvet");
+
+            lgbtbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'veterans'
+            lgbtbtn.id = 'activebtn';
+        }
+        merge();
     }
 }
 
 function panafrican() {
-    var lgbtimg = document.getElementById('image1');
+    var active = document.getElementById('active');
     var panimg = document.getElementById('image2');
     const bodydiv = document.getElementById('bodydiv');
-    var lgbtbtn = document.getElementById('lgbt');
+    var activebtn = document.getElementById('activebtn');
     var panbtn = document.getElementById('panaf');
 
     if(panimg.id == 'image2')
     {
-        lgbtimg.id = 'image2';
-        panimg.id = 'image1';
-    
-        bodydiv.classList.add("bodypan");
-        bodydiv.classList.remove("bodylgbt");
+        if(active.classList.contains('lgbtgr'))
+        {
+            active.id = 'image1';
+            panimg.id = 'active';
+        
+            bodydiv.classList.add("bodypan");
+            bodydiv.classList.remove("bodylgbt");
 
-        panbtn.classList.add("btn-glow");
-        lgbtbtn.classList.remove("btn-glow");
+            panbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lgbt'
+            panbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('vetgr'))
+        {
+            active.id = 'image3';
+            panimg.id = 'active';
+        
+            bodydiv.classList.add("bodypan");
+            bodydiv.classList.remove("bodyvet");
+
+            panbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'veterans'
+            panbtn.id = 'activebtn';
+        }
+        merge();
+    }
+}
+
+function veterans() {
+    var active = document.getElementById('active');
+    var vetimg = document.getElementById('image3');
+    const bodydiv = document.getElementById('bodydiv');
+    var activebtn = document.getElementById('activebtn');
+    var vetbtn = document.getElementById('veterans');
+
+    if(vetimg.id == 'image3')
+    {
+        if(active.classList.contains('lgbtgr'))
+        {
+            active.id = 'image1';
+            vetimg.id = 'active';
+        
+            bodydiv.classList.add("bodyvet");
+            bodydiv.classList.remove("bodylgbt");
+
+            vetbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lgbt'
+            vetbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('pangr'))
+        {
+            active.id = 'image2';
+            vetimg.id = 'active';
+
+            bodydiv.classList.add("bodyvet");
+            bodydiv.classList.remove("bodypan");
+
+            vetbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id ='panaf';
+            vetbtn.id = 'activebtn';
+        }
+        merge();
     }
 }
 
 function merge() {
-    var imgCanvas = document.getElementById('image1');
-    var toMerge = document.getElementById('image3');
+    var imgCanvas = document.getElementById('active');
+    var toMerge = document.getElementById('imageup');
 
     var canvas = document.getElementById('canvas');
-    $('#image3').addClass("hidden");
+    $('#imageup').addClass("hidden");
     $('#divhidden').addClass("hidden");
     canvas.classList.remove("hidden");
 

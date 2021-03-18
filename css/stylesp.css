@@ -63,6 +63,25 @@
   -o-animation: rainbow 18s ease infinite;
     animation: rainbow 18s ease infinite;
 }
+
+.bodyvet { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, blue, red);
+    background-size: 1800% 1800%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
   
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -203,7 +222,6 @@ label:hover {
     border-radius: 50%;
     height: 56px;
     width: 56px;
-    margin: 0 0 16px 0;
     display: inline;
     border: none;
 }
@@ -212,14 +230,20 @@ label:hover {
     box-shadow: 0 0 9px 6px #cbcbcb;
 }
 
-#lgbt {
+.lgbt {
     margin: 0 16px 16px 0;
     background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gay_Pride_Flag.svg/512px-Gay_Pride_Flag.svg.png");
     background-size: cover;
 }
 
-#panaf {
-    margin: 0 0 16px 0;
+.panaf {
+    margin: 0 16px 0 0;
     background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_the_UNIA.svg/1200px-Flag_of_the_UNIA.svg.png");
+    background-size: cover;
+}
+
+.vet {
+    margin: 0 0 0 -5px;
+    background: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.png");
     background-size: cover;
 }
