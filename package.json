@@ -1,0 +1,23 @@
+{
+  "name": "prideportraits",
+  "version": "1.0.0",
+  "description": "Profile Picture Border Tool",
+  "main": "index.html",
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielSGA/prideportraits.git"
+  },
+  "author": "Daniel Alejandro Saldaña García",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielSGA/prideportraits/issues"
+  },
+  "homepage": "https://github.com/DanielSGA/prideportraits#readme"
+}
