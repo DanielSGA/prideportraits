@@ -82,6 +82,25 @@
   -o-animation: rainbow 18s ease infinite;
     animation: rainbow 18s ease infinite;
 }
+
+.bodytrans { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #FF97A9, #62CBF2);
+    background-size: 1800% 1800%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
   
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -237,7 +256,7 @@ label:hover {
 }
 
 .panaf {
-    margin: 0 16px 0 0;
+    margin: 0 16px 0 -5px;
     background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_the_UNIA.svg/1200px-Flag_of_the_UNIA.svg.png");
     background-size: cover;
 }
@@ -245,5 +264,10 @@ label:hover {
 .vet {
     margin: 0 0 0 -5px;
     background: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.png");
+    background-size: cover;
+}
+
+.trans {
+    margin: 0 16px 0 0;
     background-size: cover;
 }
