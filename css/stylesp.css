@@ -101,6 +101,44 @@
   -o-animation: rainbow 18s ease infinite;
     animation: rainbow 18s ease infinite;
 }
+
+.bodylesb { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #c63b1f, #e07a3c, #f89d60, #c4679d, #a85c8c,  #95205e);
+    background-size: 1800% 1800%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+.bodynonb { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #fef360, #8f60c9, #000000);
+    background-size: 1800% 1800%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
   
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -131,7 +169,7 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     margin-top: 64px;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     font-weight: 800;
     margin-left: 8px;
     margin-right: 8px;
@@ -270,5 +308,17 @@ label:hover {
 .trans {
     margin: 0 16px 0 0;
     background: url("https://bloximages.chicago2.vip.townnews.com/iowastatedaily.com/content/tncms/assets/v3/editorial/d/ba/dbac6e22-6058-11eb-b43a-a75a5f713b64/5c9c19efb7d51.image.png");
+    background-size: cover;
+}
+
+.lesb {
+    margin: 0 16px 0 -5px;
+    background: url("https://i.ebayimg.com/images/g/uXcAAOSwnKJe6AHW/s-l300.jpg");
+    background-size: cover;
+}
+
+.nonb {
+    margin: 0 0 0 -5px;
+    background: url("https://i.etsystatic.com/15431209/r/il/0d539d/1890187206/il_570xN.1890187206_1cyu.jpg");
     background-size: cover;
 }

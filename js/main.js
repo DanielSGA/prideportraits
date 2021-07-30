@@ -61,6 +61,34 @@ function lgbt() {
             activebtn.id = 'trans';
             lgbtbtn.id = 'activebtn';
         }
+        if(active.classList.contains('lesbgr'))
+        {
+            active.id = 'image5';
+            lgbtimg.id = 'active';
+
+            bodydiv.classList.add("bodylgbt");
+            bodydiv.classList.remove("bodylesb");
+
+            lgbtbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lesbians';
+            lgbtbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('nonbgr'))
+        {
+            active.id = 'image6';
+            lgbtimg.id = 'active';
+
+            bodydiv.classList.add("bodylgbt");
+            bodydiv.classList.remove("bodynonb");
+
+            lgbtbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'nonbinaries';
+            lgbtbtn.id = 'activebtn';
+        }
         merge();
     }
 }
@@ -114,6 +142,34 @@ function transgender() {
             activebtn.classList.remove("btn-glow");
 
             activebtn.id = 'veterans';
+            transbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('lesbgr'))
+        {
+            active.id = 'image5';
+            transimg.id = 'active';
+
+            bodydiv.classList.add("bodytrans");
+            bodydiv.classList.remove("bodylesb");
+
+            transbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lesbians';
+            transbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('nonbgr'))
+        {
+            active.id = 'image6';
+            transimg.id = 'active';
+
+            bodydiv.classList.add("bodytrans");
+            bodydiv.classList.remove("bodynonb");
+
+            transbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'nonbinaries';
             transbtn.id = 'activebtn';
         }
         merge();
@@ -171,6 +227,34 @@ function panafrican() {
             activebtn.id = 'trans';
             panbtn.id = 'activebtn';
         }
+        if(active.classList.contains('lesbgr'))
+        {
+            active.id = 'image5';
+            panimg.id = 'active';
+
+            bodydiv.classList.add("bodypan");
+            bodydiv.classList.remove("bodylesb");
+
+            panbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lesbians';
+            panbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('nonbgr'))
+        {
+            active.id = 'image6';
+            panimg.id = 'active';
+
+            bodydiv.classList.add("bodypan");
+            bodydiv.classList.remove("bodynonb");
+
+            panbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'nonbinaries';
+            panbtn.id = 'activebtn';
+        }
         merge();
     }
 }
@@ -225,6 +309,200 @@ function veterans() {
 
             activebtn.id = 'trans';
             vetbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('lesbgr'))
+        {
+            active.id = 'image5';
+            vetimg.id = 'active';
+
+            bodydiv.classList.add("bodyvet");
+            bodydiv.classList.remove("bodylesb");
+
+            vetbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lesbians';
+            vetbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('nonbgr'))
+        {
+            active.id = 'image6';
+            vetimg.id = 'active';
+
+            bodydiv.classList.add("bodyvet");
+            bodydiv.classList.remove("bodynonb");
+
+            vetbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'nonbinaries';
+            vetbtn.id = 'activebtn';
+        }
+        merge();
+    }
+}
+
+function lesbian() {
+    var active = document.getElementById('active');
+    var lesbimg = document.getElementById('image5');
+    const bodydiv = document.getElementById('bodydiv');
+    var activebtn = document.getElementById('activebtn');
+    var lesbbtn = document.getElementById('lesbians');
+
+    if(lesbimg.id == 'image5')
+    {
+        if(active.classList.contains('lgbtgr'))
+        {
+            active.id = 'image1';
+            lesbimg.id = 'active';
+        
+            bodydiv.classList.add("bodylesb");
+            bodydiv.classList.remove("bodylgbt");
+
+            lesbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lgbt'
+            lesbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('pangr'))
+        {
+            active.id = 'image2';
+            lesbimg.id = 'active';
+
+            bodydiv.classList.add("bodylesb");
+            bodydiv.classList.remove("bodypan");
+
+            lesbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id ='panaf';
+            lesbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('vetgr'))
+        {
+            active.id = 'image3';
+            lesbimg.id = 'active';
+        
+            bodydiv.classList.add("bodylesb");
+            bodydiv.classList.remove("bodyvet");
+
+            lesbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'veterans';
+            lesbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('transgr'))
+        {
+            active.id = 'image4';
+            lesbimg.id = 'active';
+
+            bodydiv.classList.add("bodylesb");
+            bodydiv.classList.remove("bodytrans");
+
+            lesbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'trans';
+            lesbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('nonbgr'))
+        {
+            active.id = 'image6';
+            lesbimg.id = 'active';
+
+            bodydiv.classList.add("bodylesb");
+            bodydiv.classList.remove("bodynonb");
+
+            lesbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'nonbinaries';
+            lesbbtn.id = 'activebtn';
+        }
+        merge();
+    }
+}
+
+function nonbinary() {
+    var active = document.getElementById('active');
+    var nonbimg = document.getElementById('image6');
+    const bodydiv = document.getElementById('bodydiv');
+    var activebtn = document.getElementById('activebtn');
+    var nonbbtn = document.getElementById('nonbinaries');
+
+    if(nonbimg.id == 'image6')
+    {
+        if(active.classList.contains('lgbtgr'))
+        {
+            active.id = 'image1';
+            nonbimg.id = 'active';
+        
+            bodydiv.classList.add("bodynonb");
+            bodydiv.classList.remove("bodylgbt");
+
+            nonbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lgbt'
+            nonbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('pangr'))
+        {
+            active.id = 'image2';
+            nonbimg.id = 'active';
+
+            bodydiv.classList.add("bodynonb");
+            bodydiv.classList.remove("bodypan");
+
+            nonbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id ='panaf';
+            nonbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('vetgr'))
+        {
+            active.id = 'image3';
+            nonbimg.id = 'active';
+        
+            bodydiv.classList.add("bodynonb");
+            bodydiv.classList.remove("bodyvet");
+
+            nonbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'veterans';
+            nonbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('transgr'))
+        {
+            active.id = 'image4';
+            nonbimg.id = 'active';
+
+            bodydiv.classList.add("bodynonb");
+            bodydiv.classList.remove("bodytrans");
+
+            nonbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'trans';
+            nonbbtn.id = 'activebtn';
+        }
+        if(active.classList.contains('lesbgr'))
+        {
+            active.id = 'image5';
+            nonbimg.id = 'active';
+
+            bodydiv.classList.add("bodynonb");
+            bodydiv.classList.remove("bodylesb");
+
+            nonbbtn.classList.add("btn-glow");
+            activebtn.classList.remove("btn-glow");
+
+            activebtn.id = 'lesbians';
+            nonbbtn.id = 'activebtn';
         }
         merge();
     }
